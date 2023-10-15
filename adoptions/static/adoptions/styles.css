@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    
+}
+  
+  /* Navbar styles */
+  .nav {
+    background-color: #e0d7d7;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    
+   
+  }
+  
+  .nav a {
+    float: left;
+    display: block;
+    color: rgb(31, 30, 30);
+    text-align: center;
+    padding: 19px 16px;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  .nav a:hover {
+    background-color: #3f3838;
+    color: rgb(247, 245, 245);
+    height: 100px;
+  }
+  
+  /* Base template styles */
+ 
+  /* Home page styles */
+
+  
+  .quote1{
+    margin-top: 540px;
+    position: fixed;
+    margin-left: 205px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(231, 225, 225, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 370px;
+    border: 5px lightgray;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  
+
+  .img1
+  {
+    
+    width: 100%;
+    height: 620px;
+  }
+ .vid1
+ {
+ margin-top: 40px;
+ }
+
+  #logo
+  {
+    position: fixed;
+    width: 30%;
+    margin-top: 100px;
+
+  }
+  
+.content
+{
+  
+  display:flex;
+  width: 100%;
+  height: 90%;
+
+
+}
+.left
+{
+  margin-top: 100px;
+  width: 30%;
+}
+.right
+{
+  margin-top: 30px;
+  width: 70%;
+  padding-bottom: 30px;
+  background-color: #c4bdbd;
+}
+.img2
+{
+  background-image: url("images/pet1.jpg");
+  width: 100%;
+  height: 1100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img3
+{
+  background-image: url("images/pet2.jpg");
+  width: 100%;
+  height: 1100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}

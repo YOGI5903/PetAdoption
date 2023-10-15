@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Adoption</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'adoptions/styles.css' %}">
+<style>
+  #btn1,#btn2
+{
+  margin-top: 1050px;
+  margin-left: 45%;
+  opacity: 0.9;
+  background-color:rgb(173, 167, 167);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.quote2
+{
+  
+   position: absolute;
+    margin-top: 1000px;
+    margin-left: 500px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(231, 225, 225, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 450px;
+    border: 5px lightgray;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    opacity: 0.7;
+}
+.quote3
+{
+   position: absolute;
+    margin-top: 1000px;
+    margin-left: 500px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(224, 214, 214, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    border: 5px lightgray;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <a href="{% url 'home' %}"><b>Home</b></a>
+  <a href="{% url 'adopt' %}"><b>Adopt</b></a>
+  <a href="{% url 'rehomeform' %}"><b>Rehome</b></a> 
+</div>
+<div  class="quote1">
+  <p>"Aopting a pet may not change the world , But for them the world changes forever"</p>
+</div> 
+
+<img src="{% static 'adoptions/images/logo.png' %}"id="logo">
+<img  src="{% static 'adoptions/images/dog_img.jpg' %}"class="img1">
+<div class="content">
+  
+   <div class="left">
+   </div>
+
+  <div class="right">
+    <div  class="img2">
+      <div class="quote2">
+        <p>"Adopt, don't shop. Find your new best friend today."</p>
+      </div>
+      <a href="{% url 'adopt' %}"><button id="btn1" class="btn btn-secondary">Apopt Now</button></a>
+    </div>
+  
+
+    <div class="img3">
+      <div class="quote3">
+        <p>"A loving gift is the best gift you can give to your pet"</p>
+      </div>
+      <a href="{% url 'rehomeform' %}" ><button id="btn2" class="btn btn-secondary">Rehome</button></a>
+    </div>
+
+</div>
+</div>
+<script>
+  document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+</script>
+</body>
+</html>

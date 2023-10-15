@@ -1,0 +1,68 @@
+.container {
+    border: 2px solid gray;
+    height: 70%;
+    width: 600px;
+    padding: 50px;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 8px;
+  }
+  .header {
+    text-align: center;
+  padding-top: 0px;
+   margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 0px 5px 7px;
+  }
+  body {
+    height: 100%;
+    background-image: url("images/dog1.jpg");
+    
+  }
+  #pass {
+    margin-left: 50px;
+  }
+  span {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+   #submit{
+    border-radius: 10px;
+    width: 130px;
+    margin-left: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header2 {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 0px 5px 7px;
+  }
+  body
+  {
+    
+    height: 100%;
+    margin-bottom: 100px;
+  }
+#submit
+{
+  margin-left: 200px;
+}
+input,select{
+  margin-bottom: 20px;
+  
+}
+#formFile
+{
+  margin-top: 0px;
+}
+label
+{
+  margin-top:0px;
+  
+}
+#img
+{
+  color: rgb(236, 229, 229);
+}
